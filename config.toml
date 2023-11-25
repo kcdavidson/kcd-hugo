@@ -9,12 +9,11 @@ enableInlineShortcodes = true
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
 ignoreErrors = ["error-remote-getjson"]
-monoDarkIcon = true
 # ------------------------------
 
 [params]
   color = 'linen'
-
+  monoDarkIcon = true
 # twitter = 'nanxiaobei'
 # github = 'nanxiaobei'
 # instagram = 'nan.xiaobei'
@@ -28,7 +27,7 @@ monoDarkIcon = true
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true
+      unsafe = false
 [markup.highlight]
   lineNos = true
 
