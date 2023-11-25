@@ -9,7 +9,7 @@ enableInlineShortcodes = true
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
 ignoreErrors = ["error-remote-getjson"]
-
+monoDarkIcon = true
 # ------------------------------
 
 [params]
@@ -69,5 +69,3 @@ series = "series"
     disableInlineCSS = true
   [services.twitter]
     disableInlineCSS = true
-
-monoDarkIcon = true                       # show monochrome dark mode icon
