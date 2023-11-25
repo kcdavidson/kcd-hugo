@@ -15,13 +15,13 @@ ignoreErrors = ["error-remote-getjson"]
 [params]
   color = 'linen'
 
-  twitter = 'nanxiaobei'
-  github = 'nanxiaobei'
-  instagram = 'nan.xiaobei'
+# twitter = 'nanxiaobei'
+# github = 'nanxiaobei'
+# instagram = 'nan.xiaobei'
 
-  avatar = 'nanxiaobei@gmail.com'
-  name = 'Lee'
-  bio = 'Discover fresh context'
+# avatar = 'nanxiaobei@gmail.com'
+  name = 'kc davidson'
+# bio = 'Discover fresh context'
 # ------------------------------
 
 # needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
@@ -29,8 +29,8 @@ ignoreErrors = ["error-remote-getjson"]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-#  [markup.highlight]
-#    lineNos = true
+[markup.highlight]
+  lineNos = true
 
 [menu]
 
