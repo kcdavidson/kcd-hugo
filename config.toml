@@ -1,67 +1,80 @@
 baseURL = 'https://kcdavidson.net/'
-title = 'k.c. davidson'
+title = "k.c. davidson"
 author = "k.c. davidson"
-languageCode = 'en-us'
-defaultContentLanguage = 'en'
+languageCode = "en-us"
+defaultContentLanguage = "en"
 theme = 'paper'
-paginate = 3
+paginate = 10
 enableInlineShortcodes = true
 ignoreErrors = ["error-remote-getjson"]
 # ------------------------------
-
 [params]
   color = 'linen'
   monoDarkIcon = true
-# twitter = 'nanxiaobei'
+  name = 'k.c. davidson'
+# bio = 'This is my bio.'
+  twitter = 'kkkkkcccccddddd'
+  instagram = 'kkkkkcccccddddd'
 # github = 'nanxiaobei'
-# instagram = 'nan.xiaobei'
-
 # avatar = 'nanxiaobei@gmail.com'
-  name = 'kc davidson'
-# bio = 'Discover fresh context'
 # ------------------------------
-
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+# ------------------------------
+[permalinks]
+  posts = "/:year/:month/:day/:slug/"
+  pages = "/:slug/"
+  sections = "/:slug/"
+  aliases = "/:slug/"
+# ------------------------------
+[frontmatter]
+  date = ['date', 'pubdate', 'publishDate', 'lastmod']
+  pubdate = ['pubdate', 'publishDate', 'date', 'lastmod']
+  lastmod = ['lastmod', ':fileModTime', ':default']
+# ------------------------------
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = false
-[markup.highlight]
-  lineNos = true
-
+  [markup.highlight]
+    lineNos = true
+# ------------------------------
 [menu]
   [[menu.main]]
-    identifier = "about"
+    slug = "archive"
+    name = "Archive"
+    url = "/archive/"
+    weight = 20
+  [[menu.main]]
+    slug = "about"
     name = "About"
     url = "/about/"
-    weight = 10
+    weight = 30
   [[menu.main]]
-    identifier = "contact"
+    slug = "contact"
     name = "Contact"
     url = "/contact/"
-    weight = 10
-
-[taxonomies]
-category = "categories"
-tag = "tags"
-series = "series"
-
-[privacy]
-  [privacy.vimeo]
-    disabled = false
-    simple = true
-  [privacy.twitter]
-    disabled = false
-    enableDNT = true
-    simple = true
-  [privacy.instagram]
-    disabled = false
-    simple = true
-  [privacy.youtube]
-    disabled = false
-    privacyEnhanced = true
-
-[services]
-  [services.instagram]
-    disableInlineCSS = true
-  [services.twitter]
-    disableInlineCSS = true
+    weight = 40
+# ------------------------------
+# [privacy]
+#   [privacy.vimeo]
+#     disabled = false
+#     simple = true
+#   [privacy.twitter]
+#     disabled = false
+#     enableDNT = true
+#     simple = true
+#   [privacy.instagram]
+#     disabled = false
+#     simple = true
+#   [privacy.youtube]
+#     disabled = false
+#     privacyEnhanced = true
+# ------------------------------
+# [services]
+#   [services.instagram]
+#     disableInlineCSS = true
+#   [services.twitter]
+#     disableInlineCSS = true

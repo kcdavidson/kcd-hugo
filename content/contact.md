@@ -1,10 +1,16 @@
 +++
 title = "Contact"
-description = "Hugo, the world's fastest framework for building websites"
-date = "2019-02-28"
-aliases = ["about-us", "about-hugo", "contact"]
-author = "lee.so"
+slug = "contact"
+permalink = "contact"
+date = "{{ .Date }}"
+#lastmod = "{{ .LastMod }}"
+author = "k.c. davidson"
+tags = [""]
+#aliases = [""]
+type = 'page'
+draft = false
 +++
 
-- [github.com/nanxiaobei](https://github.com/nanxiaobei)
-- [lee.so](https://lee.so)
+- [Twitter](https://twitter.com/kkkkkcccccddddd)
+- [Instagram](https://instagram.com/kkkkkcccccddddd)
+- Github
