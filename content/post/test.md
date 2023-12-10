@@ -9,5 +9,3 @@ tags = ["test1"]
 type = "page"
 draft = false
 +++
-
-{{% archive %}}
