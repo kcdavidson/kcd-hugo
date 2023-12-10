@@ -1,13 +1,11 @@
 baseURL = 'https://kcdavidson.net/'
-title = 'kcdavidson'
-author = "kc davidson"
+title = 'k.c. davidson'
+author = "k.c. davidson"
 languageCode = 'en-us'
 defaultContentLanguage = 'en'
 theme = 'paper'
 paginate = 3
 enableInlineShortcodes = true
-# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
-# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
 ignoreErrors = ["error-remote-getjson"]
 # ------------------------------
 
@@ -23,7 +21,6 @@ ignoreErrors = ["error-remote-getjson"]
 # bio = 'Discover fresh context'
 # ------------------------------
 
-# needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
