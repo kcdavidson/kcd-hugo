@@ -1,27 +1,14 @@
-baseURL = 'https://kcdavidson.net/'
+baseURL = "https://kcdavidson.net/"
+homepage = "https://kcdavidson.net/"
 title = "k.c. davidson"
 author = "k.c. davidson"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-theme = 'paper'
+theme = "paper"
 paginate = 10
 enableInlineShortcodes = true
+disablePostNavigation = false
 ignoreErrors = ["error-remote-getjson"]
-# ------------------------------
-[params]
-  color = 'linen'
-  monoDarkIcon = true
-  name = 'k.c. davidson'
-# bio = 'This is my bio.'
-  twitter = 'kkkkkcccccddddd'
-  instagram = 'kkkkkcccccddddd'
-# github = 'nanxiaobei'
-# avatar = 'nanxiaobei@gmail.com'
-# ------------------------------
-[taxonomies]
-  category = "categories"
-  tag = "tags"
-  series = "series"
 # ------------------------------
 [permalinks]
   posts = "/:year/:month/:day/:slug/"
@@ -29,10 +16,25 @@ ignoreErrors = ["error-remote-getjson"]
   sections = "/:slug/"
   aliases = "/:slug/"
 # ------------------------------
+[params]
+  color = "linen"
+  monoDarkIcon = true
+  name = "k.c. davidson"
+  bio = "This is my bio."
+  twitter = "kkkkkcccccddddd"
+  instagram = "kkkkkcccccddddd"
+# github = "nanxiaobei"
+# avatar = "nanxiaobei@gmail.com"
+# ------------------------------
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+# ------------------------------
 [frontmatter]
-  date = ['date', 'pubdate', 'publishDate', 'lastmod']
-  pubdate = ['pubdate', 'publishDate', 'date', 'lastmod']
-  lastmod = ['lastmod', ':fileModTime', ':default']
+  date = ["date", "pubdate", "publishDate", "lastmod"]
+  pubdate = ["pubdate", "publishDate", "date", "lastmod"]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
 # ------------------------------
 [markup]
   [markup.goldmark]
@@ -43,20 +45,35 @@ ignoreErrors = ["error-remote-getjson"]
 # ------------------------------
 [menu]
   [[menu.main]]
+    identifier = "home"
+    slug = "/"
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    identifier = "posts"
+    slug = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 20
+  [[menu.main]]
+    identifier = "archive"
     slug = "archive"
     name = "Archive"
     url = "/archive/"
-    weight = 20
+    weight = 30
   [[menu.main]]
+    identifier = "about"
     slug = "about"
     name = "About"
     url = "/about/"
-    weight = 30
+    weight = 40
   [[menu.main]]
+    identifier = "contact"
     slug = "contact"
     name = "Contact"
     url = "/contact/"
-    weight = 40
+    weight = 50
 # ------------------------------
 # [privacy]
 #   [privacy.vimeo]
@@ -73,8 +90,8 @@ ignoreErrors = ["error-remote-getjson"]
 #     disabled = false
 #     privacyEnhanced = true
 # ------------------------------
-# [services]
-#   [services.instagram]
-#     disableInlineCSS = true
-#   [services.twitter]
-#     disableInlineCSS = true
+[services]
+  [services.instagram]
+    disableInlineCSS = true
+  [services.twitter]
+    disableInlineCSS = true
