@@ -1,5 +1,4 @@
 baseURL = "https://kcdavidson.net/"
-homepage = "https://kcdavidson.net/"
 title = "k.c. davidson"
 author = "k.c. davidson"
 languageCode = "en-us"
@@ -39,17 +38,17 @@ ignoreErrors = ["error-remote-getjson"]
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = false
+      unsafe = true
   [markup.highlight]
     lineNos = true
 # ------------------------------
 [menu]
-  [[menu.main]]
-    identifier = "home"
-    slug = "/"
-    name = "Home"
-    url = "/"
-    weight = 10
+  # [[menu.main]]
+  #   identifier = "homepage"
+  #   slug = "/"
+  #   name = "Home"
+  #   url = "/"
+  #   weight = 10
   [[menu.main]]
     identifier = "posts"
     slug = "posts"

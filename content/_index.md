@@ -1,11 +1,11 @@
 +++
-title = "k.c. davidson"
+#title = ""
 #slug = ""
 #permalink = ""
 #date = "{{ .Date }}"
 #lastmod = "{{ .LastMod }}"
-author = "k.c. davidson"
-tags = ["index"]
+#author = "k.c. davidson"
+#tags = [""]
 #aliases = [""]
 #draft = false
 +++
