@@ -1,11 +1,11 @@
 +++
-#title = ""
-#slug = ""
-#permalink = ""
-#date = "{{ .Date }}"
-#lastmod = "{{ .LastMod }}"
+title = "Posts"
+slug = "post"
+permalink = "post"
+date = "{{ .Date }}"
+lastmod = "{{ .LastMod }}"
 author = "k.c. davidson"
-#tags = [""]
+tags = ["index"]
 #aliases = ["posts", "post", "blogs", "blog", "writings", "writing", "articles", "article", "essays", "essay"]
 type = "section"
 draft = false

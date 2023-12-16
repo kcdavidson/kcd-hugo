@@ -1,12 +1,14 @@
 +++
 title = "Archive"
 slug = "archive"
-layout = "archive"
 permalink = "archive"
+date = "{{ .Date }}"
 #lastmod = "{{ .LastMod }}"
-tags = [""]
+#author = "k.c. davidson"
+#tags = [""]
 #aliases = [""]
-type = "page"
+layout = "archive"
+kind = "page"
 draft = false
 +++
 

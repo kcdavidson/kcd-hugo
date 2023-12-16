@@ -5,9 +5,9 @@ permalink = "contact"
 date = "{{ .Date }}"
 #lastmod = "{{ .LastMod }}"
 author = "k.c. davidson"
-tags = [""]
+#tags = [""]
 #aliases = [""]
-type = 'page'
+kind = "page"
 draft = false
 +++
 

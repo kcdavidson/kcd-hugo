@@ -1,13 +1,10 @@
 baseURL = "https://kcdavidson.net/"
-title = "k.c. davidson"
+title = "kcdavidson.net"
 author = "k.c. davidson"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 theme = "paper"
 paginate = 10
-enableInlineShortcodes = true
-disablePostNavigation = false
-ignoreErrors = ["error-remote-getjson"]
 # ------------------------------
 [permalinks]
   posts = "/:year/:month/:day/:slug/"
@@ -22,7 +19,9 @@ ignoreErrors = ["error-remote-getjson"]
   bio = "This is my bio."
   twitter = "kkkkkcccccddddd"
   instagram = "kkkkkcccccddddd"
-# github = "nanxiaobei"
+  github = "kcdavidson"
+  rss = true
+  disablePostNavigation = false
 # avatar = "nanxiaobei@gmail.com"
 # ------------------------------
 [taxonomies]
@@ -43,17 +42,11 @@ ignoreErrors = ["error-remote-getjson"]
     lineNos = true
 # ------------------------------
 [menu]
-  # [[menu.main]]
-  #   identifier = "homepage"
-  #   slug = "/"
-  #   name = "Home"
-  #   url = "/"
-  #   weight = 10
   [[menu.main]]
     identifier = "posts"
-    slug = "posts"
+    slug = "post"
     name = "Posts"
-    url = "/posts/"
+    url = "/post/"
     weight = 20
   [[menu.main]]
     identifier = "archive"
@@ -91,6 +84,10 @@ ignoreErrors = ["error-remote-getjson"]
 # ------------------------------
 [services]
   [services.instagram]
-    disableInlineCSS = true
+    disableInlineCSS = false
   [services.twitter]
-    disableInlineCSS = true
+    disableInlineCSS = false
+[security]
+  enableInlineShortcodes = true
+[misc]
+  ignoreErrors = ["error-remote-getjson"]
