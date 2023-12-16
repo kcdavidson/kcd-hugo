@@ -1,5 +1,5 @@
 +++
-#title = ""
+title = "Home"
 #slug = ""
 #permalink = ""
 #date = "{{ .Date }}"
