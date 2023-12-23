@@ -1,12 +1,13 @@
-+++
-title = "Home"
-#slug = ""
-#permalink = ""
-#date = "{{ .Date }}"
-#lastmod = "{{ .LastMod }}"
-author = "k.c. davidson"
-#tags = [""]
-#aliases = ["posts", "post", "blogs", "blog", "writings", "writing", "articles", "article", "essays", "essay"]
-type = "section"
-draft = false
-+++
+---
+title: "Home"
+---
+
+# Hello
+
+## Subheading 1
+
+Welcome to your new Hugo site.
+
+## Subheading 2
+
+Now go build something great.
