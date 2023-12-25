@@ -14,3 +14,21 @@ theme = 'kcd-hugo-theme'
     name = "About"
     url = "/about"
     weight = 20
+
+  [[menu.social]]
+    name = "X"
+    pre = "x"
+    url = "https://x.com/kcdson"
+    weight = 10
+
+  [[menu.social]]
+    name = "Instagram"
+    pre = "instagram"
+    url = "https://www.instagram.com/kcdson/"
+    weight = 20
+
+  [[menu.social]]
+    name = "RSS Feed"
+    pre = "rss"
+    url = "/index.xml"
+    weight = 30
