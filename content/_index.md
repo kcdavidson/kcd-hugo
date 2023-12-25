@@ -1,8 +1,7 @@
 ---
 title: "Home"
+description: "This is my home page."
 ---
-
-# Hello
 
 ## Subheading 1
 
