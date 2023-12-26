@@ -48,6 +48,46 @@ body {
   }
 }
 
+/* Footer */
+
+.site-footer {
+  max-width: 65rem;
+  padding: 3rem;
+  padding-top: 1rem;
+  margin: 0 auto 2rem;
+}
+
+.site-footer p {
+  color: var(--color-subtext);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.site-footer .menu {
+  justify-content: center;
+  flex-direction: row;
+}
+
+.site-footer .menu a {
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 64rem) {
+  .site-footer {
+      padding-left: 5vw;
+      padding-right: 5vw;
+  }
+
+  .site-footer p {
+      font-size: 0.75rem;
+  }
+
+  .site-footer .menu a svg {
+      width: 20px;
+      height: 20px;
+  }
+}
+
 /* LISTS */
 
 .post-snippet {
