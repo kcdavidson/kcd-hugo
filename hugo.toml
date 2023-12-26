@@ -1,34 +1,24 @@
-baseURL = "https://kcdavidson.net/"
-title = "kcdavidson.net"
+baseURL = 'https://kcdavidson.net/'
+languageCode = 'en-us'
+title = 'kcdavidson.net'
 theme = 'kcd-hugo-theme'
 
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts"
-    weight = 10
+# [[menus.main]]
+# name = 'Home'
+# pageRef = '/'
+# weight = 10
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about"
-    weight = 20
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
 
-  [[menu.social]]
-    name = "X"
-    pre = "x"
-    url = "https://x.com/kcdson"
-    weight = 10
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
 
-  [[menu.social]]
-    name = "Instagram"
-    pre = "instagram"
-    url = "https://www.instagram.com/kcdson/"
-    weight = 20
-
-  [[menu.social]]
-    name = "RSS Feed"
-    pre = "rss"
-    url = "/index.xml"
-    weight = 30
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.116.0"

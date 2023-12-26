@@ -3,10 +3,10 @@ title: "Home"
 description: "This is my home page."
 ---
 
-## Subheading 1
+## Follow
 
 Welcome to your new Hugo site.
 
-## Subheading 2
+## Subscribe
 
 Now go build something great.
