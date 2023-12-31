@@ -1,3 +1,163 @@
+/* Variables */
+:root {
+  --font-serif: "Times New Roman", Times, serif;
+  --font-sans: Helvetica, Arial, sans-serif;
+  --font-mono: Courier, monospace;
+  --font-family: 'KJV1611';
+  --font-size: 1.15rem;
+  --line-height: 1.5;
+
+  --border-radius: 1rem;
+  --border-radius-small: 0.5rem;
+
+  --color-background: #fff;
+  --color-background-alt: #fffcf0;
+  --color-background-code: #000000;
+  --color-text: #000000;
+  --color-text-bright: #ffffff;
+  --color-text-strong: #333333;
+  --color-subtext: #777777;
+  --color-primary: #0000ff;
+  --color-accent: #0000ff;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-background: #000;
+    --color-background-alt: #333;
+    --color-background-code: #fff;
+    --color-text: #fff;
+    --color-text-bright: #000;
+    --color-text-strong: #fff;
+    --color-subtext: #aaa;
+    --color-primary: #ff6600;
+    --color-accent: #ff6600;
+  }
+}
+
+/* Global styles */
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font: var(--font-size)/var(--line-height) var(--font-sans);
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 64rem) {
+  body {
+      font-size: 1.125rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  color: var(--color-text-strong);
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+strong {
+  color: var(--color-text-strong);
+}
+
+ul, ol {
+  margin-bottom: 1.5rem;
+  padding: 0 0 0 1.25rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+blockquote {
+  margin: 1rem 0 2rem 1rem;
+  padding: 0.6rem 1.5rem 0;
+  border-inline-start: 0.35rem solid var(--color-primary);
+  font-style: italic;
+}
+
+@media screen and (max-width: 64rem) {
+  blockquote {
+      margin-left: 0;
+  }
+}
+
+pre {
+  background-color: var(--color-background-code) !important;
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  overflow: auto;
+  border-radius: var(--border-radius-small);
+  padding: 1.6rem 1.8rem 1.8rem;
+  margin-bottom: 3rem;
+}
+
+date,
+svg {
+  display: block;
+}
+
+.icon-inline {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+.icon-rss {
+  padding-left: 5px;
+}
+
+figure {
+  margin: 2rem auto 2rem;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-small);
+}
+
+figcaption {
+  color: var(--color-subtext);
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+header+figure {
+  margin-top: 0;
+}
+
 /* LAYOUT */
 
 body {
@@ -45,6 +205,121 @@ body {
   .site-nav a {
     padding: 0.5rem;
     padding-left: 0;
+  }
+}
+
+/* Header and navigation */
+
+.site-header {
+  padding: 3rem 5vw;
+}
+
+.site-nav {
+  max-width: 96rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.site-nav .logo {
+  color: var(--color-accent);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 1rem;
+  color: var(--color-text-bright);
+}
+
+.site-nav .menu-social a {
+  padding: 1rem 0.75rem;
+}
+
+.site-nav .menu-social li:last-child a {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 64rem) {
+  .site-nav .menu-social {
+      display: none;
+  }
+
+  .site-nav .menu li:last-child a {
+      padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .site-header {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+  }
+
+  .site-nav,
+  .menu {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .site-nav a {
+      padding: 0.25rem 0.5rem;
+      padding-left: 0;
+  }
+}
+
+/* Footer */
+
+.site-footer {
+  max-width: 65rem;
+  padding: 3rem;
+  padding-top: 1rem;
+  margin: 0 auto 2rem;
+}
+
+.site-footer p {
+  color: var(--color-subtext);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.site-footer .menu {
+  justify-content: center;
+  flex-direction: row;
+}
+
+.site-footer .menu a {
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 64rem) {
+  .site-footer {
+      padding-left: 5vw;
+      padding-right: 5vw;
+  }
+
+  .site-footer p {
+      font-size: 0.75rem;
+  }
+
+  .site-footer .menu a svg {
+      width: 20px;
+      height: 20px;
   }
 }
 
