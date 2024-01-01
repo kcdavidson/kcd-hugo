@@ -68,7 +68,7 @@ body {
 }
 
 h1 {
-  font-family: KJV1611, Helvetica;
+  font-family: 'KJV1611' !important;
   color: var(--color-text-strong);
   text-transform: uppercase;
   display: flex;
