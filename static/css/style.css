@@ -68,6 +68,18 @@ body {
   }
 }
 
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  color: var(--color-subtext);
+  font-size: 1rem;
+  text-align: center;
+}
+
 h1 {
   font-family: 'KJV1611' !important;
   color: var(--color-text-strong);
@@ -75,7 +87,6 @@ h1 {
   display: flex;
   justify-content: center;
   font-size: 2em;
-  letter-spacing: 0.2em;
   line-height: 1.25;
   margin-bottom: 2rem;
 }
@@ -92,18 +103,6 @@ h6 {
 h2 {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
-}
-
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.description {
-  color: var(--color-subtext);
-  font-size: 1rem;
-  text-align: center;
 }
 
 p {
