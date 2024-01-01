@@ -16,7 +16,7 @@
         url('fonts/KJV1611.svg#KJV1611') format('svg');
     font-weight: normal;
     font-style: normal;
-    font-display: auto;
+    font-display: swap;
 }
 
   --border-radius: 1rem;
