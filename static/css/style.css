@@ -3,9 +3,21 @@
   --font-serif: "Times New Roman", Times, serif;
   --font-sans: Helvetica, Arial, sans-serif;
   --font-mono: Courier, monospace;
-  --font-family: 'KJV1611';
   --font-size: 1.15rem;
   --line-height: 1.5;
+
+  @font-face {
+    font-family: 'KJV1611';
+    src: url('fonts/KJV1611.eot');
+    src: url('fonts/KJV1611.eot?#iefix') format('embedded-opentype'),
+        url('fonts/KJV1611.woff2') format('woff2'),
+        url('fonts/KJV1611.woff') format('woff'),
+        url('fonts/KJV1611.ttf') format('truetype'),
+        url('fonts/KJV1611.svg#KJV1611') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
   --border-radius: 1rem;
   --border-radius-small: 0.5rem;
@@ -55,7 +67,14 @@ body {
   }
 }
 
-h1,
+h1 {
+  font-family: KJV1611, Helvetica;
+  color: var(--color-text-strong);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
 h2,
 h3,
 h4,
@@ -67,6 +86,7 @@ h6 {
 
 h1 {
   font-size: 2em;
+  letter-spacing: 0.2em;
   line-height: 1.25;
   margin-bottom: 2rem;
 }
@@ -74,6 +94,18 @@ h1 {
 h2 {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  color: var(--color-subtext);
+  font-size: 1rem;
+  text-align: center;
 }
 
 p {
@@ -287,15 +319,16 @@ body {
 
 .site-footer {
   max-width: 65rem;
-  padding: 3rem;
+  padding: 0.5rem;
   padding-top: 1rem;
-  margin: 0 auto 2rem;
+  margin: 0 auto 0;
 }
 
 .site-footer p {
   color: var(--color-subtext);
   font-size: 1rem;
   text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .site-footer .menu {
@@ -304,7 +337,7 @@ body {
 }
 
 .site-footer .menu a {
-  padding: 0.5rem;
+  padding: 0.2rem;
 }
 
 @media screen and (max-width: 64rem) {
