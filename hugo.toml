@@ -20,7 +20,7 @@ weight = 30
 
 [services]
   [services.disqus]
-    shortname = 'kcdson'
+    shortname = 'kcdavidson'
 
 [module]
   [module.hugoVersion]
