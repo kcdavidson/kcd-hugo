@@ -196,10 +196,10 @@ header+figure {
   margin-top: 0;
 }
 
-/* LAYOUT */
+/* LAYOUT
 
 body {
-  /* color: #333; */
+  color: #333;
   font-size: 125%;
   line-height: 1.5;
   max-width: 45rem;
@@ -209,7 +209,7 @@ body {
 
 .content {
   margin-bottom: 2rem;
-}
+} */
 
 /* NAVIGATION */
 
