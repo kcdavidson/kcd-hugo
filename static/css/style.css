@@ -47,6 +47,9 @@
     --color-primary: #ff6600;
     --color-accent: #ff6600;
   }
+  iframe[src*="disqus.com"] {
+    color-scheme: light;
+  }
 }
 
 /* Global styles */
@@ -196,7 +199,7 @@ header+figure {
   margin-top: 0;
 }
 
-/* LAYOUT
+/* LAYOUT */
 
 body {
   color: #333;
@@ -209,7 +212,7 @@ body {
 
 .content {
   margin-bottom: 2rem;
-} */
+}
 
 /* NAVIGATION */
 
