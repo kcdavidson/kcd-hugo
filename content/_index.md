@@ -1,6 +1,6 @@
 ---
 title: "K.C. Davidson"
-description: "Welcome"
+description: "Official Website"
 ---
 
 ## Follow

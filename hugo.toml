@@ -18,6 +18,10 @@ name = 'Tags'
 pageRef = '/tags'
 weight = 30
 
+[services]
+  [services.disqus]
+    shortname = 'kcdson'
+
 [module]
   [module.hugoVersion]
     extended = true
