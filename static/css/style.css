@@ -50,6 +50,9 @@
   iframe[src*="disqus.com"] {
     color-scheme: light;
   }
+  iframe[src*="substack.com"] {
+    color-scheme: light;
+  }
 }
 
 /* Global styles */
