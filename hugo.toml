@@ -21,6 +21,7 @@ weight = 30
 [services]
   [services.googleAnalytics]
     ID = 'G-3ZS2PC83EX'
+
   [services.disqus]
     shortname = 'kcdavidson'
 
@@ -28,3 +29,6 @@ weight = 30
   [module.hugoVersion]
     extended = true
     min = "0.116.0"
+
+[outputs]
+  home = ["HTML", "RSS"]
