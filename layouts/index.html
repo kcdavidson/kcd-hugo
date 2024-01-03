@@ -11,6 +11,9 @@
 
 {{ .Content }}
 
+{{ partial "substack.html" . }}
+
+
 <h2>Latest</h2>
 <ul class="home-posts">
 {{ range ( where .Site.RegularPages "Type" "posts" | first 5 ) }}
