@@ -203,6 +203,14 @@ header + figure {
   margin-top: 0;
 }
 
+#custom-substack-embed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%; /* or any specific width */
+}
+
 /* LAYOUT */
 
 body {
