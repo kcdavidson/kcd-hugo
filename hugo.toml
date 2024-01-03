@@ -19,6 +19,8 @@ pageRef = '/tags'
 weight = 30
 
 [services]
+  [services.googleAnalytics]
+    ID = 'G-3ZS2PC83EX'
   [services.disqus]
     shortname = 'kcdavidson'
 
