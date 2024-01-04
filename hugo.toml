@@ -3,20 +3,26 @@ languageCode = 'en-us'
 title = 'kcdavidson.net'
 theme = 'kcd-hugo-theme'
 
-# [[menus.main]]
+# [[menu.main]]
 # name = 'Home'
 # pageRef = '/'
 # weight = 10
 
-[[menus.main]]
+[[menu.main]]
 name = 'Posts'
 pageRef = '/posts'
 weight = 20
 
-[[menus.main]]
+[[menu.main]]
 name = 'Tags'
 pageRef = '/tags'
 weight = 30
+
+# [[menu.social]]
+#   name = 'RSS Feed'
+#   pre = "rss"
+#   url = "/index.xml"
+#   weight = 10
 
 [services]
   [services.googleAnalytics]
