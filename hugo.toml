@@ -1,6 +1,7 @@
 baseURL = 'https://kcdavidson.net/'
 languageCode = 'en-us'
 title = 'kcdavidson.net'
+author = 'k.c. davidson'
 theme = 'kcd-hugo-theme'
 
 # [[menu.main]]
