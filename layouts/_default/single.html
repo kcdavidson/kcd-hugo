@@ -5,13 +5,15 @@
 {{ .Content }}
 
 <div>
-    {{ with .PrevInSection }}
-    <a class="previous" href="{{ .Permalink }}"> {{.Title}}</a>
-    {{ end }}
+  {{ with .PrevInSection }}
+  <a class="previous" href="{{ .Permalink }}"> {{.Title}}</a>
+  {{ end }}
+  <div style="float: right;">
     {{ with .NextInSection }}
     <a class="next" href="{{ .Permalink }}"> {{.Title}}</a>
     {{ end }}
   </div>
+</div>
 
 {{ partial "disqus.html" . }}
 
