@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-date = "{{ .Date }}"
-lastmod = "{{ .LastMod }}"
+date: "{{ .Date }}"
+lastmod: "{{ .LastMod }}"
 author: "{{ .Site.Params.author }}"
 draft: true
 description: ""
